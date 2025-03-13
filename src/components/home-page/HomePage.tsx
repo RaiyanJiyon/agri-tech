@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroBanner from "./hero-section/HeroBanner";
 import ServicesOverview from "./services-section/ServicesOverview";
+import AboutUs from "./about-us-section/AboutUs";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
         />
       </div>
       <ServicesOverview />
+      <AboutUs />
     </section>
   );
 };
