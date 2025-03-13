@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <section>
-      <Container className="px-4" weight={1320}>
-        <div className="">
+    <section className="my-16">
+      <Container className="px-4 flex gap-7" weight={1320}>
+        <div className="md:w-3/4 flex flex-col items-start gap-5">
           <p className="text-[#278D45]">
             We have 30 years of agriculture & eco farming experience
           </p>
@@ -32,10 +32,11 @@ const AboutUs = () => {
             width={820}
             height={375}
             alt="hut-d"
+            className="rounded-3xl"
             src={"/hut.webp"}
           />
         </div>
-        <div>
+        <div className="md:w-2/4">
           <div className="bg-[#F8C32C] rounded-2xl p-5">
             <div className="border border-white rounded-2xl border-dashed">
               <div className="p-6 text-[#52320A]">
@@ -57,35 +58,61 @@ const AboutUs = () => {
             </div>
           </div>
           {/* bfd */}
-          <div className="bg-[#0D401C] rounded-2xl p-5">
+          <div className="bg-[#0D401C] rounded-2xl mt-16 p-5">
             <div className="border border-white rounded-2xl border-dashed">
               <div className="p-6 text-white">
-                <div className="flex items-center gap-4">
-                  <Image
-                    height={18}
-                    width={18}
-                    src={"/icons/mark.svg"}
-                    alt=""
-                  />
-                  <h3>Modern Agriculture Equipment</h3>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image
-                    height={18}
-                    width={18}
-                    src={"/icons/mark.svg"}
-                    alt=""
-                  />
-                  <h3>Awesome Harvest of Wheat</h3>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image
-                    height={18}
-                    width={18}
-                    src={"/icons/mark.svg"}
-                    alt=""
-                  />
-                  <h3>Fresh Fruits & Vegetables</h3>
+                <div>
+                  <div className="flex items-center gap-4">
+                    <Image
+                      height={18}
+                      width={18}
+                      src={"/icons/mark.svg"}
+                      alt=""
+                    />
+                    <h3>Modern Agriculture Equipment</h3>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <Image
+                      height={18}
+                      width={18}
+                      src={"/icons/mark.svg"}
+                      alt=""
+                    />
+                    <h3>Awesome Harvest of Wheat</h3>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <Image
+                      height={18}
+                      width={18}
+                      src={"/icons/mark.svg"}
+                      alt=""
+                    />
+                    <h3>Fresh Fruits & Vegetables</h3>
+                  </div>
+                  <div className="pt-6 border-t mt-2.5 border-white/15">
+                    <div className="flex gap-2 items-center">
+                      <Image
+                        height={42}
+                        width={42}
+                        alt=""
+                        src={"/icons/man.svg"}
+                      />
+                      <p className="uppercase">
+                        Highly Qualified & Specialized Farmers
+                      </p>
+                    </div>
+                    <div className="flex gap-2 items-center">
+                      <Image
+                        height={42}
+                        width={42}
+                        alt=""
+                        src={"/icons/chick.svg"}
+                      />
+                      <p className="uppercase">
+                        fruit, vegetables and livestock
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
